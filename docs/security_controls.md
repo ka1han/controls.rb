@@ -1,5 +1,5 @@
 # Security Controls
-Lets assume that we have ControlsInsight running on our localhost and on port 8080.
+Lets assume that we have ControlsInsight running in our localhost and on port 8080.
 ## GET /api/security_controls
 This endpoint returns a list of security control objects with its name and enabled state.
 
@@ -10,7 +10,6 @@ results in the following result
 
 ```json
 [
-
     {
         "enabled": true,
         "name": "desktops-with-up-to-date-high-risk-applications"
@@ -21,10 +20,9 @@ results in the following result
     },
     ...       
     {
-
     	"enabled": false,
     	"name": "desktops-with-email-attachment-filtering-enabled"
-	}    	
+    }    	
 ]
 ```
 ## GET /api/security_controls/{security_control}
@@ -36,11 +34,10 @@ http://localhost:8080/insight/controls/api/security_controls/code-execution-prev
 results in the following result
 
 ```json
-	{
-
-    	"enabled": true,
-    	"name": "code-execution-prevention"
-	}
+    {
+        "enabled": true,
+        "name": "code-execution-prevention"
+    }
 ```
 
 ## PUT /api/security_controls
@@ -57,7 +54,6 @@ Now we get the following:-
 
 ```json
 [
-
     {
         "enabled": true,
         "name": "desktops-with-up-to-date-high-risk-applications"
@@ -68,14 +64,12 @@ Now we get the following:-
     },
 	...       
     {
-
     	"enabled": false,
     	"name": "desktops-with-email-attachment-filtering-enabled"
-	}    	
+    }    	
 ]
 ```
 Note: Always at least on control must be selected.
-
 
 ## PUT /api/security_controls/{security_control}
 This Endpoints allows a single security control selected or deselected in the UI to be saved into the database
@@ -89,7 +83,6 @@ To see this change, let us do a GET Request on all the security control
 i.e. http://localhost:8080/insight/controls/api/security_controls/code-execution-prevention
 
 ```json
-
     {
         "enabled": true,
         "name": "code-execution-prevention"
