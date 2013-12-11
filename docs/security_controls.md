@@ -73,7 +73,7 @@ This Endpoints allows a single security control selected or deselected
 
 ### Example
 
-Let's select code-execution-prevention control. To see the change, let us do a GET Request on the security control
+Let's select `code-execution-prevention control`. To see the change, let us do a GET Request on the security control
 
 i.e. https://nexpose.local:3780/insight/controls/api/security_controls/code-execution-prevention
 
