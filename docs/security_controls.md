@@ -37,7 +37,7 @@ results in the following:-
     {
        "enabled": true,
        "name": "code-execution-prevention"
-   }
+    }
 ```
 
 ## PUT /api/security_controls
