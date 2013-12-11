@@ -45,7 +45,7 @@ This endpoint allows list of controls to be selected or deselected
 
 ### Example
 
-Let's select `desktops-with-email-attachment-filtering-enabled',`desktops-with-up-to-date-high-risk-applications` and deselect 'code-execution-prevention`. To see the change, let us do a GET Request on all the security controls
+Let's select `desktops-with-email-attachment-filtering-enabled`,`desktops-with-up-to-date-high-risk-applications` and deselect `code-execution-prevention`. To see the change, let us do a GET Request on all the security controls
 
 i.e. https://nexpose.local:3780/insight/controls/api/security_controls
 Now we get the following:-
