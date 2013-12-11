@@ -66,7 +66,7 @@ Now we get the following:-
     }    	
 ]
 ```
-NOTE: Always at least on control must be selected.
+``NOTE``: Always at least on control must be selected.
 
 ## PUT /api/security_controls/{security_control}
 This Endpoints allows a single security control selected or deselected 
