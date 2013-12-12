@@ -87,7 +87,7 @@ Controls.threat_vectors('vector-name-here')
 # => TODO: Add example output
 ```
 
-# Trends
+### Trends
 ```ruby
 # Retrieve a set of statistics over time
 Controls.threat_trends('threat-name-here')
