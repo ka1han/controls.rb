@@ -1,6 +1,4 @@
-ControlsInsight API v1.0 (beta)
----
-
+# ControlsInsight API v1.0 (beta)
 ## Overview
 Rapid7's **controlsinsight**, hereafter **controls**insight or simply **controls**,
 
@@ -15,7 +13,7 @@ To see advanced usage in Ruby read the [Ruby client documentation here](http://w
 ## Authentication
 You must authenticate using HTTP Basic Auth when making any of the API requests.
 
-## Curl
+### Curl
 See the cURL man pages on how to authenticate.
 
 ```bash
@@ -23,7 +21,7 @@ See the cURL man pages on how to authenticate.
 curl --user admin:password https://nexpose.local:3780/insight/controls/api/1.0
 ```
 
-## Ruby
+### Ruby
 ```ruby
 # Allow connections to Nexpose's self-signed cert
 Controls.middleware.ssl[:verify] = false
@@ -63,14 +61,14 @@ client = Controls::Client.new({
 ```
 
 **NOTE**: The **controls** Ruby client doesn't enable or install netrc support by default. You must follow the preceding instructions to enable it.
-# Status & Error Codes
-## Success
+## Status & Error Codes
+### Success
 <table>
 <tr><th>Status Code</th><th>Status</th><th>Description</th></tr>
 <tr><td>200</td><td>OK</td><td>The request was successful (includes a hash/array for the requested resource)</td></tr>
 </table>
 
-## Failure
+### Failure
 <table>
 <tr><th>Status Code</th><th>Status</th><th>Description</th></tr>
 <tr><td>401</td><td>Unauthorized</td><td>The request didn't contain any information for authentication</td></tr>
@@ -78,10 +76,21 @@ client = Controls::Client.new({
 <tr><td>404</td><td>Not Found</td><td>The resource(s) you requested couldn't be found (returns an error message)</td></tr>
 </table>
 
-## Example Error JSON
+## Error JSON
+### Example
 ```json
 {
     "status": 404,
     "messsage": "The resource x could not be found."
 }
 ```
+
+## API collections
+### • Assets
+### • Assessments
+### • Configurations
+### • Guidance
+### • Threats
+### • Threat Vectors
+### • Security Controls
+### • Trend
