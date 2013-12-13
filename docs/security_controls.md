@@ -1,7 +1,6 @@
 # Security Controls
-
 ## GET /api/security_controls
-This endpoint returns a list of security control objects with its name and enabled state.
+Returns a list of security control objects with its name and enabled state.
 
 ### Example
 The following URL 
@@ -26,7 +25,7 @@ results in the following:-
 ]
 ```
 ## GET /api/security_controls/{security_control}
-This endpoint returns a security control object with its name and enabled state
+Returns a security control object with its name and enabled state
 
 ### Example
 The following URL
@@ -41,7 +40,7 @@ results in the following:-
 ```
 
 ## PUT /api/security_controls
-This endpoint allows list of controls to be selected or deselected 
+Returns list of controls to be selected or deselected 
 
 ### Example
 
@@ -69,7 +68,7 @@ Now we get the following:-
 ``NOTE``: Always at least on control must be selected.
 
 ## PUT /api/security_controls/{security_control}
-This Endpoints allows a single security control selected or deselected 
+Returns a single security control selected or deselected 
 
 ### Example
 
