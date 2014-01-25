@@ -5,6 +5,7 @@
     <base href="http://rapid7.github.io/controlsinsight.rb/">
     <title>Search | ControlsInsight API</title>
     <link rel="stylesheet" href="style.css">
+
     <meta name="generator" content="nanoc 3.6.7">
   </head>
   <body>
@@ -13,18 +14,17 @@
 
       <h2 id="asset-search">Asset Search</h2>
 
-      <p>Find assets by multiple criteria including, but not limited to:</p>
+      <p>Find assets by multiple criteria including, but not limited to the asset’s:</p>
 
       <ul>
-      <li>name: The name of the asset</li>
+      <li>name</li>
 
-      <li>hostname: The hostname of the asset</li>
+      <li>hostname</li>
 
-      <li>IP address: The IP address of the asset</li>
+      <li>IP address</li>
       </ul>
       <pre><code>GET /assets/search?query={query}{&amp;page,per_page,sort}</code></pre>
     </div>
-
     <div id="sidebar">
       <h2><a href="v1/">Overview</a></h2>
       <ul>
