@@ -5,32 +5,34 @@
     <base href="http://rapid7.github.io/controlsinsight.rb/">
     <title>Search | ControlsInsight API</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- you don't need to keep this, but it's cool for stats! -->
     <meta name="generator" content="nanoc 3.6.7">
   </head>
   <body>
     <div id="main">
-      <h1>Search</h1>
-      <h2>Search Assets</h2>
+      <h1 id="search">Search</h1>
+
+      <h2 id="asset-search">Asset Search</h2>
+
       <p>Find assets by multiple criteria including, but not limited to:</p>
+
       <ul>
-      <li>name</li>
-      <li>hostname</li>
-      <li>IP address</li>
+      <li>name: foo</li>
+
+      <li>hostname: bar</li>
+
+      <li>IP address: baz</li>
       </ul>
+      <pre><code>GET /assets/search?query={query}{&amp;page,per_page,sort}</code></pre>
     </div>
+
     <div id="sidebar">
-      <h2>Documentation</h2>
+      <h2><a href="v1/">Overview</a></h2>
       <ul>
-        <li><a href="http://nanoc.ws/docs/">Documentation</a></li>
-        <li><a href="http://nanoc.ws/docs/tutorial/">Getting Started</a></li>
+        <li><a href="troubleshooting/">troubleshooting</a></li>
       </ul>
-      <h2>Community</h2>
+      <h2><a href="v1/search/">Search</a></h2>
       <ul>
-        <li><a href="http://groups.google.com/group/nanoc/">Discussion Group</a></li>
-        <li><a href="irc://chat.freenode.net/#nanoc">IRC Channel</a></li>
-        <li><a href="http://github.com/nanoc/nanoc/wiki/">Wiki</a></li>
+        <li><a href="v1/search/#asset-search">Asset Search</a></li>
       </ul>
     </div>
   </body>
